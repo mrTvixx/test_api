@@ -52,7 +52,6 @@ export default {
   computed: mapGetters(["targetPackage"]),
   watch: {
     targetPackage() {
-      console.log("here_this.targetPackage", this.targetPackage);
       if (this.targetPackage.name) this.dialog = true;
     }
   },
